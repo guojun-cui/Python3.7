@@ -24,5 +24,7 @@ print("my list :{0}".format(d))
 print("my list :{0}".format(d))
 print("my list :%s" %d)
 print("hello" + "world")
-
+#join可迭代的对象，一般是个list
+new = string.strip().split('a')
+print("###".join(new))
 
