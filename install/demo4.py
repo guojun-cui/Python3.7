@@ -9,7 +9,8 @@ def add(string):
     numbers += string.split("+")
     for num in numbers:
         total += int(num.strip())
-    print("{0} = {1}".format(string,total))
+    print("{0} = {1}".format(string, total))
+
 
 def reduce(string):
     result = 0
@@ -19,7 +20,8 @@ def reduce(string):
     numbers.pop(0)
     for num in numbers:
         result -= int(num.strip())
-    print("{0} = {1}".format(string,result))
+    print("{0} = {1}".format(string, result))
+
 
 def ride(string):
     total = 1
@@ -27,16 +29,19 @@ def ride(string):
     numbers += string.split("*")
     for num in numbers:
         total *= int(num.strip())
-    print("{0} = {1}".format(string,total))
+    print("{0} = {1}".format(string, total))
+
 
 def divising(string):
-        numbers = []
-        numbers += string.split("/")
-        result = int(numbers[0])
-        numbers.pop(0)
-        for num in numbers:
-            result /= int(num.strip())
-        print("{0} = {1}".format(string,result))
+    numbers = []
+    numbers += string.split("/")
+    result = int(numbers[0])
+    numbers.pop(0)
+    for num in numbers:
+        result /= int(num.strip())
+    print("{0} = {1}".format(string, result))
+
+
 if __name__ == '__main__':
     print("######################################################")
     print("#####################计算机##########################")
